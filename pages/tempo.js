@@ -1,4 +1,5 @@
 function Tempo(props) {
+    console.log('>>>> Passando pelo Frontend;')
     const DataDinamica = new Date();
     const DataDinamicaString = DataDinamica.toGMTString();
 
@@ -11,6 +12,7 @@ function Tempo(props) {
 }
 
     export function getStaticProps() {
+        console.log('>>>> Passando pelo getStaticProps();')        
         const DataStatica = new Date();
         const DataStaticaString = DataStatica.toGMTString();
         
