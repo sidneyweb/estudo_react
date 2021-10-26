@@ -7,3 +7,6 @@ function CapsLock(props) {
 function Pagina() {
     return <div>Massinha</div>
 }
+
+
+export default Pagina
