@@ -1,20 +1,14 @@
 import { useState } from 'react';
-
 import Link from 'next/link';
 
-function Home() {
+function exibe() {
     return (
-        <div>
-        <h1>Home page index</h1>
-        <Contador />
-        <br />
-        <Link href="/sobre"><a>Acessar a página Sobre</a></Link>
-        <br />
-        <Link href="/tempo"><a>Acessar a página Tempo</a></Link>
-        <br />
-        <Link href="/contador"><a>Acessar a página Contador</a></Link>
+        <div>    
+            <Contador />
+            <br/ >
+            <Link href="/"><a> Voltar Home</a></Link>
         </div>
-            )
+        )
 }
 
 function Contador() {
@@ -32,5 +26,5 @@ function Contador() {
     )
 }
 
+export default exibe
 
-export default Home

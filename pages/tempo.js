@@ -1,3 +1,5 @@
+import Link from 'next/link';
+
 function Tempo(props) {
     console.log('>>>> Passando pelo Frontend;')
     const DataDinamica = new Date();
@@ -7,6 +9,11 @@ function Tempo(props) {
         <div>
             <div>{DataDinamicaString} (dinâmico)</div>
             <div>{props.DataStaticaString} (estático)</div>
+
+            <br />
+        <Link href="/">
+            <a>Voltar Home</a>
+        </Link>
         </div>
     )
 }
@@ -20,8 +27,7 @@ function Tempo(props) {
             props: {
                 DataStaticaString
             },
-            revalidate: 1
-
+            revalidate: 1 // um segundo para aguardar para computar novamente o range 
         }
     }
 
