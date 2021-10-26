@@ -19,7 +19,8 @@ function Tempo(props) {
         return {
             props: {
                 DataStaticaString
-            }
+            },
+            revalidate: 1
 
         }
     }
